@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(()=>{
     const fetchImages = async()=>{
-      const result = await axios.get(`https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=${process.env.REACT_APP_ACCESS_KEY}`)
+      const result = await axios.get(`https://api.unsplash.com/search/photos?page=1&query=${query}&client_id=${process.env.REACT_APP_ACCESS_KEY}&per_page=20`)
       setItems(result.data.results)
       console.log(result.data.results)
       setIsLoding(false)
@@ -27,8 +27,8 @@ const Home = () => {
 
   return (
     <div className='flex flex-col h-screen'>
-      <Header />
-
+      <Header searchText={(query) => setQuery(query)}/>
+     
 
       <div className="flex justify-center mx-5">
         {isLoding ? (

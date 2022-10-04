@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from './Image'
 
-const Images = ({ item}) => {
+const Images = ({item}) => {
   return (
     <>
 
