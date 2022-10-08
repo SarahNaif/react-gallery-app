@@ -12,7 +12,8 @@ const Header = ({ searchText }) => {
       <div className="my-7 py-6 w-full flex flex-col  justify-between">
         <h1 className="text-3xl font-mono text-center mb-16">React Gallery</h1>
 
-        <div className="mx-auto w-96  bg-white flex items-center  rounded-lg drop-shadow-md md:shadow-sm">
+        <form onSubmit={onSubmit} className="mx-auto w-96  bg-white flex items-center  rounded-lg drop-shadow-md md:shadow-sm">
+         
           <input
             type="text"
             value={text}
@@ -23,8 +24,9 @@ const Header = ({ searchText }) => {
           />
           <div className=" md:p-2 mr-2">
             <button
+               type="submit"
               className="rounded-full focus:outline-none w-14 h-9 md:w-14 md:h-9 flex items-center justify-center"
-              onClick={onSubmit}
+              
             >
               <svg
                 width="24"
@@ -52,7 +54,8 @@ const Header = ({ searchText }) => {
               </svg>
             </button>
           </div>
-        </div>
+          </form>
+       
       </div>
     </div>
   );
