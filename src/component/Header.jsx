@@ -5,6 +5,7 @@ const Header = ({ searchText }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     searchText(text);
+    setText("")
   };
 
   return (
