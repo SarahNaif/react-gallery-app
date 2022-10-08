@@ -1,19 +1,20 @@
-# Getting Started with Create React App
+# Image Gallery React & Tailwind.css
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple gallery is created using React, React Hooks, axios and extra library react-lazy-load-component.
 
-## Available Scripts
+### Demo
 
-In the project directory, you can run:
+[Deployed by vercel](https://react-gallery-app-blond.vercel.app/) 
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Outside the src folder create `.env` file
+2. Inside `.env` type this `REACT_APP_ACCESS_KEY = <YOUR KEY HERE>` with your key inside get your key from unsplash api 
+3. Then run `npm install`
+4. To run the project in localhost 3000 `npm start`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
+<<<<<<< HEAD
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -40,3 +41,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run build` fails to minify
 
+=======
+>>>>>>> c0d92574374b709b6997d348cb8d22d248b20b66
